@@ -1,0 +1,68 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "text2cypher-2025v1",
+  "dataset_size": 88899989,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/neo4j/text2cypher-2025v1@d88b8a7d477c8c1809218f6c566bd31f1ad1e504/data/train.parquet": {
+      "num_bytes": 4516341,
+      "checksum": null
+    },
+    "hf://datasets/neo4j/text2cypher-2025v1@d88b8a7d477c8c1809218f6c566bd31f1ad1e504/data/test.parquet": {
+      "num_bytes": 594090,
+      "checksum": null
+    }
+  },
+  "download_size": 5110431,
+  "features": {
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "schema": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "cypher": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "data_source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instance_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "database_reference_alias": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 94010420,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 78846460,
+      "num_examples": 35946,
+      "dataset_name": "text2cypher-2025v1"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 10053529,
+      "num_examples": 4438,
+      "dataset_name": "text2cypher-2025v1"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
