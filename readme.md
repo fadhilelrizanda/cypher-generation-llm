@@ -69,6 +69,7 @@ Based on the provided [article](https://aclanthology.org/2025.genaik-1.11.pdf), 
 ## Project-Structure
 
 `data_exploration.ipynb` used to data exploration
+
 `train-vanilla-transformer.ipynb` used to train vanila transformer for cypher generation
 
 ## Vanila Transformer Configuration
