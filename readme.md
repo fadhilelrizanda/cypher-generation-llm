@@ -81,7 +81,7 @@ Based on the provided [article](https://aclanthology.org/2025.genaik-1.11.pdf), 
 
 ## Progress Result
 
-The result of the vanilla-transformer-v1
+The result of the vanilla-transformer-v1 and v2 (progress)
 
 <img src="docs/result_1.png" alt="Data Split" width="1000"/>
 
