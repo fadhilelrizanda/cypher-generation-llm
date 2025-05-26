@@ -62,20 +62,36 @@ The Dataset distribution can be seen in charts below. This information generated
 
 Based on the provided [article](https://aclanthology.org/2025.genaik-1.11.pdf), the paper evaluates model performance using Google-BLEU and Exact Match Score. These metrics are commonly used in text-to-code and semantic parsing tasks like natural language to Cypher generation.
 
-| **Evaluation Method** | **Description**                                                                                                                                                                       |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Google-BLEU**       | A variant of BLEU designed for higher correlation with human judgments in translation and generation tasks. It compares n-grams between predicted and reference Cypher queries.       |
-| **Exact Match Score** | Measures the percentage of predictions that exactly match the reference Cypher query character-for-character. This metric is strict and sensitive to formatting or token differences. |
+| **Evaluation Method** | **Description**                                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Google-BLEU**       | A variant of BLEU designed for higher correlation with human judgments in translation and generation tasks. It compares n-grams between predicted and reference Cypher queries. |
 
 ## Project-Structure
+
+`data_exploration.ipynb` used to data exploration
+`train-vanilla-transformer.ipynb` used to train vanila transformer for cypher generation
+
+## Vanila Transformer Configuration
+
+| Model                 | num_layers | num_heads | ff_dim |
+| --------------------- | ---------- | --------- | ------ |
+| vanila-transformer-v1 | 2          | 4         | 256    |
+| vanila-transformer-v2 | 4          | 4         | 512    |
+| vanila-transformer-v3 | 8          | 8         | 512    |
+
+## Progress Result
+
+The result of the vanilla-transformer-v1
+
+<img src="docs/result_1.png" alt="Data Split" width="500"/>
 
 ## Project-Progress
 
 - [x] Download Dataset to local
 - [x] Dataset Exploration
 - [x] Training Using the pretrained model (Only for testing)
-- [ ] Building Vanila Transformer Architecture
-- [ ] Hyperparameter Tuning (at least 3 variation) Vanila Transformer Architecture
+- [x] Building Vanila Transformer Architecture
+- [x] Hyperparameter Tuning (at least 3 variation) Vanila Transformer Architecture
 - [ ] Building Transformer Variant Architecture
 - [ ] Evaluation Transformer Variant
 - [ ] Project Summary
